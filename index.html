@@ -57,19 +57,26 @@
                 </div>
           </div>
             <!-- shape container -->
-            <div class="flex-1">
-                <!-- tharid card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Parallelogram</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions">
-                        <button class="btn btn-primary w-full">calculater</button>
-                      </div>
+            <div class="flex-1 gap-6">
+              <!-- tharid card -->
+              <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                  <div class="card-body">
+                    <h2 class="card-title ">parallelogram</h2>
+                    <p>Area (A) = b x h</p>
+                    <p>
+                      <input type="text" class="ml-4 border bg-gray-200 w-24 px-2 text-xl" placeholder="parallelogram" name="" id="parallelogram-base">
+                      <span class="ml-2">cm</span>
+                      <input type="text" class="border bg-gray-200 w-24 px-2 text-xl" placeholder="height" name="" id="parallelogram-height">
+                      <span class="ml-2">cm</span>
+                    </p>
+                    <p class="text-2xl">Area : <span id="parallelogram">0 </span>cm<sup>2</sup></p>
+                    <div class="card-actions">
+                      <button onclick="calculaterparallelogramArea()" class="btn btn-primary w-full">calculater</button>
                     </div>
                   </div>
-            </div>
+                </div>
+          </div>
             <!-- area calculator -->
             <div class="w-[400px]">
                 <div class="text-4xl">Area calculator</div>

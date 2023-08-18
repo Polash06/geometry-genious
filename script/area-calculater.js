@@ -32,3 +32,23 @@ function calculaterRetagArea(){
    const widthlengt = document.getElementById('width-span')
    widthlengt.innerText = area
 }
+
+//  ata short kart bondhi
+function calculaterparallelogramArea(){
+    const base = getInputvalue ('parallelogram-base');
+
+    const height = getInputvalue ('parallelogram-height')
+    
+    const area = base * height ;
+    console.log(area)
+
+
+}
+
+function getInputvalue(filedId){
+    const inputFiled = document.getElementById(filedId)
+    const inputFiledstring = inputFiled.value ;
+    const value = parseFloat(inputFiledstring);
+    inputFiled.value = '';
+    return value;
+}
