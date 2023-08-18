@@ -13,8 +13,9 @@ function calculatarTriangleArea(){
 
     const areaspan = document.getElementById('triangle-span');
     areaspan.innerText = Area
-
-    // calculatarTriangleArea.value = '';
+     baseFiled.value = '';
+     heightFiled.value = '';
+   
 }
 
 function calculaterRetagArea(){
@@ -40,13 +41,12 @@ function calculaterparallelogramArea(){
     const height = getInputvalue ('parallelogram-height')
     
     const area = base * height ;
-    console.log(area)
-
 
 }
 
 function getInputvalue(filedId){
     const inputFiled = document.getElementById(filedId)
+    console.log(inputFiled)
     const inputFiledstring = inputFiled.value ;
     const value = parseFloat(inputFiledstring);
     inputFiled.value = '';
